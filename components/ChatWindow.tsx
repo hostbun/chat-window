@@ -40,6 +40,7 @@ type Props = {
   title?: string;
   subtitle?: string;
   baseUrl?: string;
+  iframeUrlOverride?:string;
   greeting?: string;
   awayMessage?: string;
   newMessagePlaceholder?: string;
@@ -103,6 +104,7 @@ class ChatWindow extends React.Component<Props, State> {
       accountId: props.accountId,
       inboxId: props.inboxId,
       baseUrl: props.baseUrl,
+      iframeUrlOverride:props.iframeUrlOverride,
       customer: props.customer,
       debug: debugModeEnabled,
       setInitialMessage: this.getDefaultGreeting,
