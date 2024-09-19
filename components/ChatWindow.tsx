@@ -104,7 +104,6 @@ class ChatWindow extends React.Component<Props, State> {
       accountId: props.accountId,
       inboxId: props.inboxId,
       baseUrl: props.baseUrl,
-      iframeUrlOverride:props.iframeUrlOverride,
       customer: props.customer,
       debug: debugModeEnabled,
       setInitialMessage: this.getDefaultGreeting,
